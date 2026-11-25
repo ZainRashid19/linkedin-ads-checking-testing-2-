@@ -1,0 +1,9 @@
+{
+  "framework": "nextjs",
+  "regions": ["dub1"],
+  "crons": [
+    { "path": "/api/cron/sync?source=manyreach", "schedule": "0 11 * * *" },
+    { "path": "/api/cron/sync?source=dripify", "schedule": "10 11 * * *" },
+    { "path": "/api/cron/sync?source=linkedin_ads", "schedule": "20 11 * * *" }
+  ]
+}
